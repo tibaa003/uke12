@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form" action="">
+      <p id="navnOutput">Du heter:</p>
+      <label for="navn">Ditt Navn:</label>
+      <input type="text" name="navn" id="navn" />
+      <br />
+      <input type="submit" value="submit" />
+    </form>
+    <script>
+      form = document.getElementById("form");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        changeName();
+      });
+      function changeName() {
+        name = form.elements["navn"].value;
+        document.getElementById("navnOutput").innerHTML = "Du heter: " + name;
+      }
+    </script>
+  </body>
+</html>
