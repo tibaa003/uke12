@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oppgave 5</title>
+  </head>
+  <body>
+    <h1>Oppgave 5</h1>
+    <!-- form -->
+    <form action="#" onsubmit="endreInfo();return false">
+      <!-- navn -->
+      <label for="navn">Navn: </label>
+      <input type="text" id="navn" pattern="[A-Za-z]*" />
+      <br />
+      <!-- alder -->
+      <label for="alder">Alder: </label>
+      <input type="number" id="alder" min="0" max="120" />
+      <!-- drikke -->
+      <p>Favoritt drikke:</p>
+      <label for="vann">Vann: </label>
+      <input type="radio" name="drikke" id="vann" value="vann" />
+      <label for="brus">Brus: </label>
+      <input type="radio" name="drikke" id="brus" value="brus" />
+      <!-- mat -->
+      <p>Favoritt mat:</p>
+      <label for="lasagne">Lasagne</label>
+      <input type="checkbox" name="mat" value="lasagne" id="lasagne" />
+      <label for="kebab">Kebab</label>
+      <input type="checkbox" name="mat" value="kebab" id="kebab" />
+      <label for="pizza">Pizza</label>
+      <input type="checkbox" name="mat" value="pizza" id="pizza" />
+      <br />
+      <!-- submit -->
+      <input type="submit" value="submit" />
+    </form>
+    <!-- text -->
+    <textarea id="textarea" readonly cols="80" rows="20"></textarea>
+    <script src="./script.js"></script>
+  </body>
+</html>

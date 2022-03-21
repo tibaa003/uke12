@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oppgave 1</title>
+    <title>Oppgave 2</title>
   </head>
   <body>
-    <h1>Oppgave 1</h1>
+    <h1>Oppgave 2</h1>
+    <textarea id="navnOutput">Du heter:</textarea>
     <form action="#" onsubmit="changeName();return false">
       <label for="navn">Ditt Navn:</label>
       <input type="text" name="navn" id="navn" />
@@ -17,7 +18,8 @@
     <script>
       form = document.forms[0];
       function changeName() {
-        console.log(form.navn.value);
+        document.getElementById("navnOutput").innerHTML =
+          "Du heter: " + form.navn.value;
       }
     </script>
   </body>
