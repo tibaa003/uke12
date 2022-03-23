@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epost generator</title>
+  </head>
+  <body>
+    <form action="#" onsubmit="lagTekst();return false">
+      <label for="navn" >Ditt navn:</label>
+      <input type="text" placeholder="Jonas Bretting Øvrebø" id="navn" />
+      <br>
+
+      <label for="kundeNavn">Kunden sitt navn:</label>
+      <input type="text" placeholder="Even Myrvoll" id="kundeNavn" />
+      <br>
+
+      <label for="50mbit">Internett 50mbit</label>
+      <input type="radio" name="produktInternett" id="50mbit" value="Internett 50mbit|399" />
+      <br>
+      <label for="100mbit">Internett 100mbit</label>
+      <input type="radio" name="produktInternett" id="100mbit" value="Internett 100mbit|599" />
+      <br>
+      <label for="300mbit">Internett 300mbit</label>
+      <input type="radio" name="produktInternett" id="300mbit" value="Internett 300mbit|799" />
+      <br>
+      <label for="500mbit">Internett 500mbit</label>
+      <input type="radio" name="produktInternett" id="500mbit" value="Internett 500mbit|999" />
+      <br>
+      <label for="internettRabatt">Rabatt for internett månedlig i %: </label>
+      <input type="number" min="0" max="100" id="internettRabatt" value="0" />
+<br>
+      <label for="tvDekodere">Antall TV-dekodere: </label>
+      <input type="number" id="tvDekodere" min="0" value="1" />
+      <label for="dekoderRabatt">Rabatt for TV-dekoder i %: </label>
+      <input type="number" min="0" max="100" id="dekoderRabatt" value="0" />
+      <br>
+      <label for="wifiExtendere">Antall wifi extendere: </label>
+      <input type="number" id="wifiExtendere" min="0" value="0" />
+      <label for="extenderRabatt">Rabatt for Wifi-extender i %: </label>
+      <input type="number" min="0" max="100" id="extenderRabatt" value="0" />
+      <br>
+      <input type="submit" value="Generer epost">
+    </form>
+    <textarea id="textarea" cols="30" rows="10"></textarea>
+    <script src="./script.js"></script>
+  </body>
+</html>
